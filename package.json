@@ -1,0 +1,20 @@
+{
+  "name": "upcomingproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "install":"cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm run start",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
